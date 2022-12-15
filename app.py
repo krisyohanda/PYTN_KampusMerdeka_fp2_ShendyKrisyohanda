@@ -22,16 +22,16 @@ def predict():
     Humidity3pm = float(flask.request.form["Humidity3pm"])
     Cloud9am = float(flask.request.form["Cloud9am"])
     Cloud3pm = float(flask.request.form["Cloud3pm"])
-    RainToday = int(flask.request.form["RainToday"])
+    RainToday = float(flask.request.form["RainToday"])
 
-    data_list = [[
+    data_list = [
         WindGustSpeed,
         Humidity9am,
         Humidity3pm,
         Cloud9am,
         Cloud3pm,
         RainToday
-    ]]
+    ]
 
     final_feature = [np.array(data_list)]
     pred_scaller = scaler.fit_transform(final_feature)
