@@ -47,3 +47,39 @@ Database ini memiliki 23 atribut. Dengan data hujan harian selama 10 tahun di Au
 21. `Temp3pm` - **temperatur jam 3 sore dalam celcius**
 22. `RainToday` - **apakah hari ini hujan: jika curah hujan 24 jam sebelum jam 9 pagi melebihi 1mm, maka nilai ini adalah 1, jika tidak nilai nya 0**
 23. `RainTomorrow` - **variable yang mau di prediksi**
+
+
+## Menjalankan Website 
+1. Make Folder `Final Project 2`
+2. Make environment variable with command `python -m venv venv` in cmd prompt
+3. Download this repository
+4. Move folder `model, static, templates` and file `app.py and requirement.txt` into `Final Project 2`
+5. Activate environment with `venv/Scripts/activate` with cmd prompt
+6. After activated, type this `pip install -r requirements.txt`
+7. Type this `$env:FLASK_APP="app.py"` and then `flask run`  
+
+## Tampilan Website
+
+- Tampilan Secara Keseluruhan
+<img src="output/Overall.png">
+
+- Tampilan Home
+<img src="output/Tampilan1.png">
+
+- Tampilan Explanation (Definition)
+<img src="output/Tampilan2.png">
+
+- Tampilan Explanation (Data)
+<img src="output/Tampilan3.png">
+
+- Tampilan Chart
+<img src="output/Tampilan4.png">
+
+- Tampilan Team
+<img src="output/Tampilan5.png">
+
+- Tampilan Prediction Section
+<img src="output/Tampilan6.png">
+
+- Output Prediksi Hujan
+<img src="output/Hasil1.png">
